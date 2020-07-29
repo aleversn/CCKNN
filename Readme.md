@@ -1,5 +1,7 @@
 # CCKNN 集群部署样例代码
 
+[项目Github](https://github.com/aleversn/CCKNN)
+
 目录结构
 ```html
 └─ root
