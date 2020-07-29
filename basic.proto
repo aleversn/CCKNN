@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+service File {
+    rpc upload (stream FileBody) returns (Response);
+}
+
+service Predict {
+    rpc pred (PredictInfo) returns (Response);
+}
+
+message PredictInfo {
+    string guid = 1;
+    repeated float X = 2;
+    int32 k = 3;
+    bool ignore_first_row = 4;
+}
+
+message Response {
+    string status = 1;
+    string result = 2;
+}
+
+message FileBody {
+    bytes file = 1;
+}
