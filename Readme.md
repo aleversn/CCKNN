@@ -97,7 +97,7 @@ pip install grpcio-tools
 
 `basic.proto`
 
-```proto3
+```protobuf
 syntax = "proto3";
 
 service File {
